@@ -3,6 +3,7 @@ group = "ru.otus.otuskotlin.dating"
 version = "0.0.1"
 repositories{
     mavenCentral()
+    jcenter()
 }
 plugins{
     kotlin("jvm") apply false

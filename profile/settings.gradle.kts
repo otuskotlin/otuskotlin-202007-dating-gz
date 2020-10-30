@@ -1,13 +1,13 @@
-rootProject.name = "otuskotlin-202007-dating"
+rootProject.name = "ok-202007-dating-gz1"
 
 pluginManagement{
     plugins{
         val kotlinVersion: String by settings
+
+        kotlin("multiplatform") version kotlinVersion apply false
         kotlin("jvm") version kotlinVersion apply false
         kotlin("plugin.serialization") version kotlinVersion apply false
     }
-    include("profile")
-    include("profile-common")
-    include("profile-transport-common")
-    include("profile-transport-rest")
 }
+
+include("ok-dating-be-common")
